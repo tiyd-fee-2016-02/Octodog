@@ -2,6 +2,7 @@ html {
   font-size: 1em;
   font-family: Helvetica, sans-serif;
 }
+
 .hugeContainer {
   border: 1px solid #d8d8d8;
 
@@ -14,18 +15,22 @@ html {
 .rightContainer {
   /*border: 1px solid #d8d8d8;*/
 }
+
 img.photo {
   width: 230px;
   height: 230px;
   border-radius: 5px;
 }
+
 .name {
   font-size: 1.5em;
   color: #999;
 }
+
 .info {
   width: 88%;
 }
+
 li.nav {
   display: inline-block;
 }
@@ -35,17 +40,21 @@ ul {
   /*border: 1px solid black;*/
   list-style: none;
 }
+
 .stats {
   align-content: center;
 }
+
 .statTop {
   text-align: center;
   font-size: 25px;
   color: #4078c0;
 }
+
 .numbers {
   display: inline-block;
   margin-left: 5%;
+
 }
 
 [class*='col-'] {
@@ -61,21 +70,62 @@ ul {
   width: 64%;
   float: right;
 }
+
 .tabList {
   background-color: #f5f5f5;
 }
+
 #tab1 {
   color: #4078c0;
-
+  padding-bottom: 1em;
+  /*background-color: #f5f5f5;*/
 }
+
 .hmmm {
   display: inline-block;
   margin-right: 5%;
   margin-left: 0;
   background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
 }
 
 .tab-panel {
   border: 1px solid #d8d8d8;
   display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}
+
+.tab-control {
+  border: 1px solid #d8d8d8;
+  padding: 5px;
+}
+
+li.pop-repo {
+  background-color: #f5f5f5;
+  padding: 5px;
+}
+
+li.title {
+  color: #4078c0;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-left: 5px;
+}
+
+li.description {
+  font-size: 1em;
+  font-weight: 300;
+  color: #666;
+  padding: 5px;
+}
+
+li.updated {
+  color: #666;
+  padding-bottom: 2em;
+  border-bottom: 1px solid #d8d8d8;
+  padding-left: 5px;
 }
