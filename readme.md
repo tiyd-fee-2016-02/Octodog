@@ -10,3 +10,4 @@
 * fixed merge conflicts
 * added daniel's work to master branch
 * created daniel branch
+* fixed additional merge conflicts
