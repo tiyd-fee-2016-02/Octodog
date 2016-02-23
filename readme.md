@@ -17,3 +17,6 @@
 * added daniel's work to master branch
 * created daniel branch
 * fixed additional merge conflicts
+* created lodash branch
+* templating with lodash on sidebar on lodash branch
+* merged lodash branch into master
