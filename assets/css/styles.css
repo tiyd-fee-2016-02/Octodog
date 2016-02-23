@@ -73,3 +73,7 @@ ul {
   border: 1px solid #d8d8d8;
   display: none;
 }
+
+.tab-panel.active {
+  display: block;
+}
