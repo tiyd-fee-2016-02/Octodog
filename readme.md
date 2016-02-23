@@ -1,8 +1,10 @@
 # Octodog!
 
-## Reminders for us ##
+### Reminders for us ###
 1. Make sure you are in the correct branch
 1. Always pull or fetch changes before starting new work
+
+### Daily Progress ###
 
 2/22
 * Used screenhero to create static layout of page
