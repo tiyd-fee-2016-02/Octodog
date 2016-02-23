@@ -26,6 +26,7 @@ $('.tabList').each(function(){ //iterate though
 /********************** lodash ****************************/
 
 $.getJSON('https://api.github.com/users/octocat', function(json){
+
     var name = _.template('<%- m.login %>', {variable: 'm'});
     var render = name({login: json.login});
     $(".name").html(render);
