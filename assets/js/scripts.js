@@ -1,6 +1,4 @@
-<<<<<<< HEAD
 
-=======
 $(function () {
   'use strict';
 
@@ -28,4 +26,3 @@ $('.tabList').each(function(){ //iterate though
 
 
 });
->>>>>>> 697a728386107e670a50fb23ba033fb855177347
