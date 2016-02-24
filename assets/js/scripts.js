@@ -80,13 +80,30 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
   // var renderStarred = starred({starred_url: json.starred_url});
   // $("#starred").html(renderStarred);
 
-// followers
+// following
   var following = _.template('<%- m.following %>', {variable: 'm'});
   var renderFollowing = following({following: json.following});
   $("#following").html(renderFollowing);
 
   });
 
+// REPOSITORIES
+// iterate through the array
+// select the index of the object we need the info from
+// get those keys
+// template it
+// append it to the page/make it render
+
+// spoon-knife is index 4
+// Hello-World is index 2
+// hello-world is index 1
+// octocat.github.io is index 3
+// git-consortium is index 0
+
+var array = $.getJSON('https://api.github.com/users/octocat/repos')
+  console.log(array);
+
+// $._forEach(array)
 
 
 });
