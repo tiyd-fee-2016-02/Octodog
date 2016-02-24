@@ -20,3 +20,6 @@
 * created lodash branch
 * templating with lodash on sidebar on lodash branch
 * merged lodash branch into master
+
+2/24
+* more css changes under lodash2 branch
