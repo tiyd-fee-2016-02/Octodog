@@ -16,17 +16,17 @@ $('.tabList').each(function(){ //iterate though
     if (!$link.is('.active')){   //if the link is not active
       $panel.removeClass('active');    // make panel inactive
       $tab.removeClass('active');      // make the tab inactive
-      $tab.css({ 'border-bottom': '1px solid #666',
+      $tab.css({ 'border-bottom': '1px solid #d8d8d8',
       'border-top': 'none',
       'border-right': 'none',
       'border-left':'none'});
 
       $panel = $(id).addClass('active'); //make panel active
       $tab = $link.parent().addClass('active'); // make tab active
-      $tab.css({'border-bottom': 'none',
-                'border-top': '1px solid #666',
-                'border-right': '1px solid #666',
-                'border-left':'1px solid #666'});
+      $tab.css({'border-bottom': '1px solid white',
+                'border-top': '1px solid #d8d8d8',
+                'border-right': '1px solid #d8d8d8',
+                'border-left':'1px solid #d8d8d8'});
     }
   });
 });
@@ -34,10 +34,10 @@ $('.tabList').each(function(){ //iterate though
 /********************** lodash ****************************/
 
 $.getJSON('https://api.github.com/users/octocat', function(json){
-//image
-  var image = _.template('<%- m.avatar_url %>', {variable: 'm'});
+// image
+  var image = _.template('<image src = "<%- m.avatar_url %>">', {variable: 'm'});
   var show = image({avatar_url: json.avatar_url});
-  $("img").html(image);
+  $(".photo").html(show);
 
 //login
     var name = _.template('<%- m.login %>', {variable: 'm'});
@@ -80,13 +80,46 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
   // var renderStarred = starred({starred_url: json.starred_url});
   // $("#starred").html(renderStarred);
 
-// followers
+// following
   var following = _.template('<%- m.following %>', {variable: 'm'});
   var renderFollowing = following({following: json.following});
   $("#following").html(renderFollowing);
 
 
   });
+
+// REPOSITORIES
+// iterate through the array
+// select the index of the object we need the info from
+// get those keys
+// template it
+// append it to the page/make it render
+
+// spoon-knife is index 4
+// Hello-World is index 2
+// hello-world is index 1
+// octocat.github.io is index 3
+// git-consortium is index 0
+
+// var array = $.getJSON('https://api.github.com/users/octocat/repos');
+// console.log(array);
+
+$.getJSON('https://api.github.com/users/octocat/repos', function(repoJson){
+  for(i = 0; i < repoJson.length; i++) {
+    var obj = repoJson[i];
+    console.log(obj.name);
+
+    // var repoName = _.template('<%- m.name %>', {variable: 'm'});
+    // var showRepo = repoName({name: repoJson[i].name});
+    // $(".git-consortium").html(showRepo);
+  }
+});
+
+  // console.log(array);
+  // $.each(array, function(){
+  // $.each(this, function (name, value){
+  // was starting to like .each but NEVERMIND
+
 
 
 
