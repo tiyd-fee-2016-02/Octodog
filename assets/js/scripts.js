@@ -104,10 +104,13 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
 // console.log(array);
 
 $.getJSON('https://api.github.com/users/octocat/repos', function(repoJson){
-  for(i = 0, i < 5, i++) {
-    var repoName = _.template('<%- m.name %>', {variable: 'm'});
-    var showRepo = repoName({name: repoJson[i].name});
-    $(".git-consortium").html(showRepo);
+  for(i = 0; i < repoJson.length; i++) {
+    var obj = repoJson[i];
+    console.log(obj.name);
+
+    // var repoName = _.template('<%- m.name %>', {variable: 'm'});
+    // var showRepo = repoName({name: repoJson[i].name});
+    // $(".git-consortium").html(showRepo);
   }
 });
 
