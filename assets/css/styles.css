@@ -117,7 +117,7 @@ li.title {
   color: #666;
   font-size: 1.3em;
   font-weight: bold;
-  padding: .5em 5px;
+  padding: .5em .5em;
   border-bottom: 1px solid #d8d8d8;
 }
 
@@ -143,6 +143,13 @@ h4 {
   font-weight: bold;
 }
 
+h3 {
+  color: #4078c0;
+  display: inline;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
 #tab-1 {
   border: 1px solid #d8d8d8;
   border-radius: .2em;
@@ -161,4 +168,35 @@ a {
   padding-top: 25px;
   width: 100%;
   height: 50px;
+}
+
+.description-two {
+  padding-top: .5em;
+  font-size: .6em;
+  font-weight: 400;
+  color: #666;
+  padding: 5px;
+}
+
+.input-repo {
+  margin-top: 5px;
+  margin-left: 5px;
+  width: 250px;
+  height: 25px;
+  font-size: .8em;
+  color: #e5e5e5;
+
+}
+
+.submit-repo {
+  margin-left: 5px;
+  margin-right: 250px;
+  width: 100px;
+  height: 30px;
+  font-size: .8em;
+  font-weight: bold;
+}
+
+.repo-link {
+  color: #4078c0;
 }
