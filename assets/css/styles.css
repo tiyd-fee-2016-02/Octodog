@@ -276,17 +276,18 @@ a {
 }
 
 .footy {
-  display: inline-block;
+  float: right;
   padding-right: 20px;
   color: #4078c0;
 }
 
 .footRight {
   padding-right: 2em;
-  float: right;
+  display: inline-block;
+
 }
 
 #catMid {
-  padding-left: 180px;
+  padding-left: 160px;
   color: #767676;
 }
