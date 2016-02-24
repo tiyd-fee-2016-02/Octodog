@@ -16,17 +16,17 @@ $('.tabList').each(function(){ //iterate though
     if (!$link.is('.active')){   //if the link is not active
       $panel.removeClass('active');    // make panel inactive
       $tab.removeClass('active');      // make the tab inactive
-      $tab.css({ 'border-bottom': '1px solid #666',
+      $tab.css({ 'border-bottom': '1px solid #d8d8d8',
       'border-top': 'none',
       'border-right': 'none',
       'border-left':'none'});
 
       $panel = $(id).addClass('active'); //make panel active
       $tab = $link.parent().addClass('active'); // make tab active
-      $tab.css({'border-bottom': 'none',
-                'border-top': '1px solid #666',
-                'border-right': '1px solid #666',
-                'border-left':'1px solid #666'});
+      $tab.css({'border-bottom': '1px solid white',
+                'border-top': '1px solid #d8d8d8',
+                'border-right': '1px solid #d8d8d8',
+                'border-left':'1px solid #d8d8d8'});
     }
   });
 });
@@ -34,10 +34,10 @@ $('.tabList').each(function(){ //iterate though
 /********************** lodash ****************************/
 
 $.getJSON('https://api.github.com/users/octocat', function(json){
-//image
-  var image = _.template('<%- m.avatar_url %>', {variable: 'm'});
+// image
+  var image = _.template('<image src = "<%- m.avatar_url %>">', {variable: 'm'});
   var show = image({avatar_url: json.avatar_url});
-  $("img").html(image);
+  $(".photo").html(show);
 
 //login
     var name = _.template('<%- m.login %>', {variable: 'm'});

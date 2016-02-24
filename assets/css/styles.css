@@ -22,7 +22,13 @@ html {
   width: 400px;
 }
 
-img.photo {
+.photo {
+  width: 230px;
+  height: 230px;
+  border-radius: 5px;
+}
+
+img{
   width: 230px;
   height: 230px;
   border-radius: 5px;
@@ -113,7 +119,10 @@ ul {
 }
 
 .tabList {
+  border-bottom: 1px solid #d8d8d8;
+  padding-bottom: 0;
   margin-bottom: 1em;
+  padding-left: 0;
 }
 
 #tab1 {
@@ -138,9 +147,9 @@ ul {
 .tab-panel.active {
   display: block;
   border-bottom: none;
-  border-top: 1px solid #d8d8d8;
+  /*border-top: 1px solid #d8d8d8;
   border-left: 1px solid #d8d8d8;
-  border-right: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;*/
 }
 
 .tab-control {
@@ -229,6 +238,11 @@ a {
 
 }
 
+.search-repo {
+  padding-bottom: .5em;
+  border-bottom: 1px solid #e5e5e5;
+}
+
 .submit-repo {
   margin-left: 5px;
   margin-right: 250px;
@@ -240,4 +254,19 @@ a {
 
 .repo-link {
   color: #4078c0;
+}
+
+li.tab {
+  padding-top: 2px;
+  margin-bottom: -1px;
+  text-align: center;
+  width: 150px;
+  height: 30px;
+}
+
+li.tab.active {
+  border-bottom: 1px solid white;
+  border-top: 1px solid #d8d8d8;
+  border-right: 1px solid #d8d8d8;
+  border-left:1px solid #d8d8d8;
 }
