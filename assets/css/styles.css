@@ -107,11 +107,6 @@ ul {
 }
 
 .col-2-3 {
-<<<<<<< HEAD
-  float: right;
-  width: 60%;
-  margin-right: 8%;
-=======
   width: 60%;
   float: right;
   margin-right: 5%;
@@ -119,17 +114,13 @@ ul {
 
 .tabList {
   margin-bottom: 1em;
->>>>>>> lodash-2
 }
 
 #tab1 {
   color: #4078c0;
-<<<<<<< HEAD
   padding-bottom: 1em;
-=======
   padding-top: .5em;
   /*background-color: #f5f5f5;*/
->>>>>>> lodash-2
 }
 
 .hmmm {
