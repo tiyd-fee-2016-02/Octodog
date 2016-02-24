@@ -23,3 +23,4 @@
 
 2/24
 * more css changes under lodash2 branch
+* merged pip2 and lodash2 into master branch
