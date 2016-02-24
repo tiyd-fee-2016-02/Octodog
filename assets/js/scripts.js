@@ -85,6 +85,7 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
   var renderFollowing = following({following: json.following});
   $("#following").html(renderFollowing);
 
+
   });
 
 
