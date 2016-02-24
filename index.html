@@ -18,14 +18,15 @@
 
 <body>
   <!-- //Left Side>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> -->
-<!-- <div class = "hugeContainer"> -->
+<div class = "hugeContainer">
   <div class = "leftContainer">
     <header>
         <ul class = "options">
-          <li class = "nav"><span id="search"><span class="octicon octicon-mark-github"></span><input type="text" value="Search"></span></li>
-          <li class = "nav"><span id="pullReq">Pull Request</span></li>
-          <li class = "nav"><span id="issues">Issues</span></li>
-          <li class = "nav"><span id="gist">Gist</span></li>
+          <li class = "nav"><span id="search"><span class="octicon octicon-mark-github" id="kitty"></span>
+            <span class= "bar"><input type="text" value=" Search GitHub" id="look"></span></span></li>
+          <li class = "nav navPad"><span id="pullReq">Pull Request</span></li>
+          <li class = "nav navPad"><span id="issues">Issues</span></li>
+          <li class = "nav navPad"><span id="gist">Gist</span></li>
         </ul>
     </header>
     <div class = "col-1-3">
@@ -49,7 +50,7 @@
         <span>Followers</span>
         </div>
       <div class = "numbers">
-        <div class = "statTop" id = "starred"></div>
+        <div class = "statTop" id = "starred">2</div>
         <span>Starred</span>
         </div>
       <div class = "numbers">
@@ -104,7 +105,7 @@
 
       </div>
   </div>
-<!-- </div> -->
+</div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="assets/js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.5.1/lodash.js"></script>
