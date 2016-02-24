@@ -29,7 +29,7 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
 //image
   var image = _.template('<%- m.avatar_url %>', {variable: 'm'});
   var show = image({avatar_url: json.avatar_url});
-  $(".photo").html(image);
+  $("img").html(image);
 
 //login
     var name = _.template('<%- m.login %>', {variable: 'm'});
