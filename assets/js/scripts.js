@@ -16,9 +16,17 @@ $('.tabList').each(function(){ //iterate though
     if (!$link.is('.active')){   //if the link is not active
       $panel.removeClass('active');    // make panel inactive
       $tab.removeClass('active');      // make the tab inactive
+      $tab.css({ 'border-bottom': '1px solid #666',
+      'border-top': 'none',
+      'border-right': 'none',
+      'border-left':'none'});
 
       $panel = $(id).addClass('active'); //make panel active
       $tab = $link.parent().addClass('active'); // make tab active
+      $tab.css({'border-bottom': 'none',
+                'border-top': '1px solid #666',
+                'border-right': '1px solid #666',
+                'border-left':'1px solid #666'});
     }
   });
 });
@@ -29,7 +37,7 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
 //image
   var image = _.template('<%- m.avatar_url %>', {variable: 'm'});
   var show = image({avatar_url: json.avatar_url});
-  $(".photo").html(image);
+  $("img").html(image);
 
 //login
     var name = _.template('<%- m.login %>', {variable: 'm'});
@@ -78,5 +86,7 @@ $.getJSON('https://api.github.com/users/octocat', function(json){
   $("#following").html(renderFollowing);
 
   });
+
+
 
 });
