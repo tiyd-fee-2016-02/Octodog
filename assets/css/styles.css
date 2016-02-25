@@ -283,13 +283,13 @@ li.tab.active {
   border-top: 1px solid #d8d8d8;
   border-right: 1px solid #d8d8d8;
   border-left:1px solid #d8d8d8;
+}
 
 .footer {
   position: abolute;
   height: 3em;
   margin-top: -3em;
   width: 87.5%;
-  /*margin-top: 40%;*/
   background-color: white;
   margin-left: 12.5%;
   left: 0;
